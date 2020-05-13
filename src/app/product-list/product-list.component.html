@@ -7,7 +7,7 @@
       {{ product.name }}
     </a>
   </h3>
-  <p><img width="300px" [src]="product.img"></p>
+  <a><img width="300px" [src]="product.img" [routerLink]="['/products', productId]"></a>
 
   <p *ngIf="product.description">
     Descrição: {{ product.description }}
